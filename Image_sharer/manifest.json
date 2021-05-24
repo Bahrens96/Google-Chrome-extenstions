@@ -1,0 +1,31 @@
+{
+"name": "My First Extension",
+"description": "Shows a menu item",
+"version": "0.2",
+"author": "Brian Ahrens",
+"manifest_version": 2,
+"permissions": ["contextMenus", "activeTab"],
+"icons": {
+  "16": "share_16.png",
+  "48": "share_48.png",
+ "128": "share_128.png"
+
+
+},
+"background": {
+    
+    "scripts":["background.js"]
+  },
+  "content_scripts":[
+    {
+      "matches":["*://www.google.com/*","*://www.youtube.com/*"],
+      "js":["index.js"]
+    
+    }
+  ]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+
+
+}
